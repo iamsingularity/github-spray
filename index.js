@@ -43,6 +43,7 @@ if (program.font) {
     }
     alphabet = require(`./fonts/${program.font}`);
 }
+alphabet[' '] = alphabet[' '] || new Array(dayInWeek).fill(' ');
 
 let startDate, graph;
 
